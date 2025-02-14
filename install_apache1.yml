@@ -20,20 +20,4 @@
      state: latest
     when: ansible_distribution == "Ubuntu"
 
-  - name: update repository index
-    ansible.builtin.dnf:
-     update_cache: yes
-    when: ansible_distribution == "Fedora"
-
-  - name: install httpd package
-    ansible.builtin.dnf:
-     name: httpd
-     state: latest
-    when: ansible_distibution == "Fedora"
-
-  - name: add php support for apache
-    ansible.builtin.dnf:
-     name: php
-     state: latest
-    when: ansible_distribution == "Fedora"
 

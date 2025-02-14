@@ -19,6 +19,7 @@
      name: libapache2-mod-php
      state: latest
     when: ansible_distribution == "Ubuntu"
+: << 'Comment'
 
   - name: update repository index
     ansible.builtin.dnf:
@@ -37,3 +38,4 @@
      state: latest
     when: ansible_distribution == "Fedora"
 
+Comment
