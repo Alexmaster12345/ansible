@@ -1,0 +1,3 @@
+ssh-copy-id -i ~/.ssh/ansible rocky-server
+eval $(ssh-agent)
+ssh-add ~/.ssh/ansible
