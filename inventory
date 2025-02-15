@@ -1,2 +1,5 @@
+[web_server]
 ubuntu-server apache_package=apache2 php_package=libapache2-mod-php
-fedora-server
+
+[db_server]
+rocky-server
