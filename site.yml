@@ -33,3 +33,4 @@
       name: mariadb
       state: latest
      when: ansible_distribution == "Rocky"
+
